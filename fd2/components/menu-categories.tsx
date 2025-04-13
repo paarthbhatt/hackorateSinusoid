@@ -10,49 +10,49 @@ const categories = [
     id: "pizza",
     name: "Pizza",
     icon: "🍕",
-    image: "/placeholder.svg?height=400&width=400",
+    
     description: "Handcrafted pizzas with premium toppings",
   },
   {
     id: "burger",
     name: "Burger",
     icon: "🍔",
-    image: "/placeholder.svg?height=400&width=400",
+    
     description: "Juicy burgers with gourmet ingredients",
   },
   {
     id: "sides",
     name: "Sides",
     icon: "🍟",
-    image: "/placeholder.svg?height=400&width=400",
+   
     description: "Perfect companions for your main dish",
   },
   {
     id: "dessert",
     name: "Dessert",
     icon: "🍰",
-    image: "/placeholder.svg?height=400&width=400",
+    
     description: "Sweet treats to satisfy your cravings",
   },
   {
     id: "chinese",
     name: "Chinese",
     icon: "🥡",
-    image: "/placeholder.svg?height=400&width=400",
+    
     description: "Authentic Asian flavors and specialties",
   },
   {
     id: "drinks",
     name: "Drinks",
     icon: "🥤",
-    image: "/placeholder.svg?height=400&width=400",
+    
     description: "Refreshing beverages for every taste",
   },
   {
     id: "deals",
     name: "Deals",
     icon: "🏷️",
-    image: "/placeholder.svg?height=400&width=400",
+   
     description: "Special offers and combo meals",
   },
 ]
