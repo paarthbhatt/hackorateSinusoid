@@ -67,7 +67,7 @@ const popularItems = [
     name: "Chocolate Lava Cake",
     description: "Warm chocolate cake with a molten center",
     price: 6.99,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/images/choco.jpg",
     category: "Dessert",
     rating: 4.9,
     isVegetarian: true,
