@@ -8,26 +8,27 @@ import { Button } from "@/components/ui/button"
 const carouselItems = [
   {
     id: 1,
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/images/carousel1.jpg",
     alt: "Delicious gourmet pizza with fresh toppings",
     title: "Gourmet Pizza Experience",
     subtitle: "Handcrafted with premium ingredients",
   },
   {
     id: 2,
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/images/carousel2.jpg",
     alt: "Juicy burger with melted cheese and fresh vegetables",
     title: "Ultimate Burger Collection",
     subtitle: "Perfectly grilled to your taste",
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=800&width=1600",
+    image: "/images/carousel3.jpg",
     alt: "Authentic Chinese cuisine with vibrant colors",
     title: "Authentic Asian Flavors",
     subtitle: "Traditional recipes with a modern twist",
   },
 ]
+
 
 export default function FeaturedCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
