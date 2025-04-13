@@ -368,31 +368,9 @@ export default function MenuPopup({ category, onClose }: MenuPopupProps) {
         }`}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Pizza slice clipart in top-right */}
-        <div className="absolute -top-10 right-10 w-32 h-32 opacity-70 pointer-events-none">
-          <div className="relative w-full h-full">
-            <Image
-              src="/placeholder.svg?height=128&width=128"
-              alt="Food clipart"
-              width={128}
-              height={128}
-              className="object-contain"
-            />
-            <div className="absolute top-0 left-1/2 w-1 h-16 bg-yellow-500 rounded-full animate-bounce"></div>
-          </div>
-        </div>
+        
 
-        {/* Three-piece circle pizza clipart in bottom-left */}
-        <div className="absolute -bottom-10 left-10 w-32 h-32 opacity-70 pointer-events-none">
-          <Image
-            src="/placeholder.svg?height=128&width=128"
-            alt="Food clipart"
-            width={128}
-            height={128}
-            className="object-contain"
-          />
-        </div>
-
+        
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-t-2xl">
           <div className="flex items-center gap-3">
