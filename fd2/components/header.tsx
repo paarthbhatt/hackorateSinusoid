@@ -15,12 +15,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="relative w-12 h-12 mr-2">
+            <div className="relative w-28 h-18 mr-2">
               <Image
-                src="/placeholder.svg?height=48&width=48"
+                src="/images/foodylogo.png"
                 alt="Foody Homes Logo"
-                width={48}
-                height={48}
+                width={4080}
+                height={58}
                 className="object-contain"
               />
             </div>
