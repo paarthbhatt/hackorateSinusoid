@@ -8,18 +8,24 @@ import { Button } from "@/components/ui/button"
 const carouselItems = [
   {
     id: 1,
-    image: "/placeholder.svg?height=600&width=1200",
-    alt: "Delicious pizza with toppings",
+    image: "/placeholder.svg?height=800&width=1600",
+    alt: "Delicious gourmet pizza with fresh toppings",
+    title: "Gourmet Pizza Experience",
+    subtitle: "Handcrafted with premium ingredients",
   },
   {
     id: 2,
-    image: "/placeholder.svg?height=600&width=1200",
-    alt: "Juicy burger with fries",
+    image: "/placeholder.svg?height=800&width=1600",
+    alt: "Juicy burger with melted cheese and fresh vegetables",
+    title: "Ultimate Burger Collection",
+    subtitle: "Perfectly grilled to your taste",
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=600&width=1200",
-    alt: "Chinese food assortment",
+    image: "/placeholder.svg?height=800&width=1600",
+    alt: "Authentic Chinese cuisine with vibrant colors",
+    title: "Authentic Asian Flavors",
+    subtitle: "Traditional recipes with a modern twist",
   },
 ]
 
@@ -43,9 +49,9 @@ export default function FeaturedCarousel() {
   }, [])
 
   return (
-    <div className="relative h-[500px] w-full overflow-hidden">
+    <div className="relative h-[600px] w-full overflow-hidden">
       <div
-        className="flex h-full transition-transform duration-500 ease-in-out"
+        className="flex h-full transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {carouselItems.map((item) => (
@@ -57,6 +63,10 @@ export default function FeaturedCarousel() {
               className="object-cover"
               priority={item.id === 1}
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col items-center justify-end pb-20 px-4 text-center">
+              <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">{item.title}</h2>
+              <p className="text-xl md:text-2xl text-white/90 max-w-2xl">{item.subtitle}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -64,7 +74,7 @@ export default function FeaturedCarousel() {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white/90 rounded-full h-10 w-10"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 backdrop-blur-sm rounded-full h-12 w-12 border-white/30 text-white"
         onClick={prevSlide}
       >
         <ChevronLeft className="h-6 w-6" />
@@ -74,20 +84,18 @@ export default function FeaturedCarousel() {
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white/90 rounded-full h-10 w-10"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 backdrop-blur-sm rounded-full h-12 w-12 border-white/30 text-white"
         onClick={nextSlide}
       >
         <ChevronRight className="h-6 w-6" />
         <span className="sr-only">Next slide</span>
       </Button>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-3">
         {carouselItems.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? "bg-primary" : "bg-white/50"
-            } transition-colors`}
+            className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? "bg-white" : "bg-white/40"}`}
             onClick={() => setCurrentIndex(index)}
           >
             <span className="sr-only">Go to slide {index + 1}</span>
